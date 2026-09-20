@@ -10,7 +10,6 @@ codegen-app/keystore.properties
 # Build artifacts (regenerable)
 *.apk
 *.aab
-*.apk.idsig
 
 # IDE / misc
 *.log
