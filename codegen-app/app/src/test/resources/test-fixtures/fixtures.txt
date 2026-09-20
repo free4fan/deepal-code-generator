@@ -1,0 +1,28 @@
+# Shared fixtures: VIN,expected_code
+# Generated from the original v3.0.1 script (algorithm unchanged for valid VIN).
+# Used by:
+#   - Python:  python3 deepal-engineer-code.py --selftest
+#   - Android: codegen-app/app/src/test/java/com/deepal/codegen/CodeGenTest.java
+# (copy lives at codegen-app/app/src/test/resources/test-fixtures/fixtures.txt)
+#
+# Note: v3.1 rejects VINs containing I, O, Q (never present in real VINs).
+# Such inputs used to be accepted by v3.0.1 and are no longer supported.
+LS6A3E2R5PA123456,*#14036425#*
+LS6A3E2R5PA0B1C2D,*#02013412#*
+LSGKA52U123ZK4L9P,*#58344299#*
+LS6BE28N5PE123456,*#14436425#*
+11111111111111111,*#11111111#*
+00000000000000000,*#00000000#*
+WXYZ1234,*#42314253#*
+2C3CCARA6PH000000,*#00700400#*
+LNBSCABK1PF100003,*#10503400#*
+ls6a3e2r5pa123xyz,*#13035424#*
+A1B2C3D4,*#13124023#*
+ZZZZZZZZ,*#55555555#*
+00000000123456789,*#47369258#*
+HGHG0J0K0L0M0N077,*#70067807#*
+
+# rejects: lines below must be rejected with an error
+#LS6A3E2R5PA1QOI12
+#9999QQII8888OO00000
+#SHORT

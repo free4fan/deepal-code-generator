@@ -1,0 +1,60 @@
+import java.io.FileInputStream
+import java.util.Properties
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.deepal.codegen'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.deepal.codegen'
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        resConfigs 'ru', 'en'
+    }
+
+    signingConfigs {
+        release {
+            def props = new Properties()
+            def propsFile = rootProject.file('keystore.properties')
+            if (propsFile.exists()) {
+                props.load(new FileInputStream(propsFile))
+            }
+            storeFile rootProject.file(props.getProperty('storeFile', 'keystore.jks'))
+            keyAlias props.getProperty('keyAlias', 'deepal')
+            def store = props.getProperty('storePassword') ?: System.getenv('DEEPAL_KEYSTORE_PASSWORD')
+            def kpass = props.getProperty('keyPassword') ?: System.getenv('DEEPAL_KEY_PASSWORD')
+            if (store == null || kpass == null) {
+                throw new GradleException('Keystore passwords are not set. ' +
+                        'Create codegen-app/keystore.properties from keystore.properties.example ' +
+                        'or set DEEPAL_KEYSTORE_PASSWORD / DEEPAL_KEY_PASSWORD env vars.')
+            }
+            storePassword store
+            keyPassword kpass
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+
+    testImplementation 'junit:junit:4.13.2'
+}

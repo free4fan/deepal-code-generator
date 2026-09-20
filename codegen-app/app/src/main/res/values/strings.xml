@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Deepal Code Gen</string>
+    <string name="header_subtitle">Генератор инженерного кода Deepal S05</string>
+    <string name="vin_hint">VIN (17 символов)</string>
+    <string name="formula_hint">Последние 8 символов VIN → *#XXXXXXXX#*</string>
+    <string name="btn_generate">Сгенерировать код</string>
+    <string name="btn_copy">Копировать</string>
+    <string name="btn_clear">Очистить</string>
+    <string name="result_placeholder">—</string>
+    <string name="error_short">Введите VIN: минимум 8 символов</string>
+    <string name="error_chars">Недопустимый символ на позиции %1$d (в VIN не используются I, O, Q и другие знаки)</string>
+    <string name="copied">Код скопирован</string>
+    <string name="settings_title">Настройки</string>
+    <string name="theme_title">Тема</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_system">Системная</string>
+    <string name="lang_title">Язык</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_en">English</string>
+    <string name="btn_help">Инструкция</string>
+    <string name="help_title">Как пользоваться</string>
+    <string name="help_dismiss">Понятно</string>
+    <string-array name="help_steps">
+        <item>&lt;b&gt;1. Сгенерируйте код.&lt;/b&gt;&lt;br&gt;Введите VIN автомобиля (17 символов) в поле ввода и нажмите «Сгенерировать код». Внизу появится код вида *#XXXXXXXX#*. Его можно скопировать кнопкой «Копировать».</item>
+        <item>&lt;b&gt;2. Введите код.&lt;/b&gt;&lt;br&gt;Откройте на головном устройстве приложение «Телефон», перейдите на панель набора номера и наберите полученный код *#XXXXXXXX#* целиком, включая * и #. Нажмите «Позвонить» — вызов не инициируется, откроется инженерное меню.</item>
+        <item>&lt;b&gt;3. Другие найденные коды.&lt;/b&gt;&lt;br&gt;В приложении «Телефон» также работают:&lt;br&gt;• 111111#*# — DynoMode, режим роликового стенда (отключает вмешательство ESP/ABS);&lt;br&gt;• 88888888*** — SmartLog, сбор и выгрузка журналов.&lt;br&gt;В инженерном меню пароль заводских кнопок на вкладке «Другие тесты» (MiscTest) — adayo7012.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+# Gradle
+**/.gradle/
+build/
+codegen-app/app/build/
+
+# Local configuration — NEVER commit
+codegen-app/local.properties
+codegen-app/keystore.properties
+
+# Build artifacts (regenerable)
+*.apk
+*.aab
+*.apk.idsig
+
+# IDE / misc
+*.log
+__pycache__/
+.claude/

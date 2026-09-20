@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Deepal Code Gen</string>
+    <string name="header_subtitle">Deepal S05 engineer code generator</string>
+    <string name="vin_hint">VIN (17 characters)</string>
+    <string name="formula_hint">Last 8 characters of VIN → *#XXXXXXXX#*</string>
+    <string name="btn_generate">Generate code</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_clear">Clear</string>
+    <string name="result_placeholder">—</string>
+    <string name="error_short">Enter VIN: at least 8 characters</string>
+    <string name="error_chars">Invalid character at position %1$d (VIN uses 0-9 and A-Z without I, O, Q)</string>
+    <string name="copied">Code copied</string>
+    <string name="settings_title">Settings</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="lang_title">Language</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_en">English</string>
+    <string name="btn_help">Help</string>
+    <string name="help_title">How to use</string>
+    <string name="help_dismiss">Got it</string>
+    <string-array name="help_steps">
+        <item>&lt;b&gt;1. Generate the code.&lt;/b&gt;&lt;br&gt;Enter the vehicle VIN (17 characters) in the input field and tap "Generate code". The code *#XXXXXXXX#* will appear below. You can copy it with the "Copy" button.</item>
+        <item>&lt;b&gt;2. Dial the code.&lt;/b&gt;&lt;br&gt;Open the "Phone" app on the head unit, switch to the dial pad and enter the generated code *#XXXXXXXX#* in full, including * and #. Press call — no actual call is made, the engineering menu opens instead.</item>
+        <item>&lt;b&gt;3. Other discovered codes.&lt;/b&gt;&lt;br&gt;The "Phone" app also accepts:&lt;br&gt;• 111111#*# — DynoMode, roller bench mode (disables ESP/ABS intervention);&lt;br&gt;• 88888888*** — SmartLog, log collection and upload.&lt;br&gt;In the engineering menu, the password for the factory buttons tab ("Misc tests") is adayo7012.</item>
+    </string-array>
+</resources>
