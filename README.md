@@ -95,7 +95,6 @@ deepal-code-generator/
 │       │   └── MainActivity.java
 │       ├── main/res/           # UI (Material 3), строки ru/en, темы
 │       └── test/               # unit-тесты CodeGen + копия fixtures
-└── adb-pic/                    # скриншоты/фото с ADB-сессий
 ```
 
 ## Другие найденные коды (Deepal S05)
