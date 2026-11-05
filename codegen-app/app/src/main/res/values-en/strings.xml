@@ -22,6 +22,10 @@
     <string name="btn_help">Help</string>
     <string name="help_title">How to use</string>
     <string name="help_dismiss">Got it</string>
+    <string name="btn_about">About</string>
+    <string name="about_title">About</string>
+    <string name="about_dismiss">Close</string>
+    <string name="about_body">Deepal Code Gen v%1$s — a utility for Deepal S05 owners: computes the head-unit engineer code from the last 8 characters of the VIN.\n\nWorks fully offline — all computation happens on the device, no network or API calls.\n\n&lt;a href="https://github.com/free4fan/deepal-code-generator"&gt;Repository on GitHub&lt;/a&gt;</string>
     <string-array name="help_steps">
         <item>&lt;b&gt;1. Generate the code.&lt;/b&gt;&lt;br&gt;Enter the vehicle VIN (17 characters) in the input field and tap "Generate code". The code *#XXXXXXXX#* will appear below. You can copy it with the "Copy" button.</item>
         <item>&lt;b&gt;2. Dial the code.&lt;/b&gt;&lt;br&gt;Open the "Phone" app on the head unit, switch to the dial pad and enter the generated code *#XXXXXXXX#* in full, including * and #. Press call — no actual call is made, the engineering menu opens instead.</item>

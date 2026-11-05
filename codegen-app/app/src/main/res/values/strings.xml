@@ -22,6 +22,10 @@
     <string name="btn_help">Инструкция</string>
     <string name="help_title">Как пользоваться</string>
     <string name="help_dismiss">Понятно</string>
+    <string name="btn_about">О программе</string>
+    <string name="about_title">О программе</string>
+    <string name="about_dismiss">Закрыть</string>
+    <string name="about_body">Deepal Code Gen v%1$s — утилита для владельцев Deepal S05: по последним 8 символам VIN вычисляет инженерный код, набираемый на головном устройстве.\n\nРаботает полностью офлайн — весь расчёт выполняется на устройстве, без сети и запросов к API.\n\n&lt;a href="https://github.com/free4fan/deepal-code-generator"&gt;Репозиторий на GitHub&lt;/a&gt;</string>
     <string-array name="help_steps">
         <item>&lt;b&gt;1. Сгенерируйте код.&lt;/b&gt;&lt;br&gt;Введите VIN автомобиля (17 символов) в поле ввода и нажмите «Сгенерировать код». Внизу появится код вида *#XXXXXXXX#*. Его можно скопировать кнопкой «Копировать».</item>
         <item>&lt;b&gt;2. Введите код.&lt;/b&gt;&lt;br&gt;Откройте на головном устройстве приложение «Телефон», перейдите на панель набора номера и наберите полученный код *#XXXXXXXX#* целиком, включая * и #. Нажмите «Позвонить» — вызов не инициируется, откроется инженерное меню.</item>

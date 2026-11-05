@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btnHelp).setOnClickListener(v -> showHelp());
 
+        findViewById(R.id.btnAbout).setOnClickListener(v -> showAbout());
+
         themeGroup.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
             if (!isChecked || restoringState) {
                 return;
@@ -163,6 +165,22 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle(R.string.help_title)
                 .setView(tv)
                 .setPositiveButton(R.string.help_dismiss, null)
+                .show();
+    }
+
+    private void showAbout() {
+        SpannableStringBuilder sb = new SpannableStringBuilder(
+                Html.fromHtml(getString(R.string.about_body, BuildConfig.VERSION_NAME),
+                        Html.FROM_HTML_MODE_LEGACY));
+        TextView tv = new TextView(this);
+        tv.setPadding(32, 24, 32, 8);
+        tv.setTextSize(15);
+        tv.setText(sb);
+        tv.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle(R.string.about_title)
+                .setView(tv)
+                .setPositiveButton(R.string.about_dismiss, null)
                 .show();
     }
 
