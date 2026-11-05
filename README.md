@@ -2,6 +2,13 @@
 
 Android-порт скрипта `deepal-engineer-code.py`: по VIN автомобиля Deepal S05 генерирует инженерный код вида `*#XXXXXXXX#*`.
 
+## О программе
+
+Deepal Code Gen — утилита для владельцев Deepal S05: приложение (и Python-скрипт) берут VIN автомобиля и по последним 8 символам вычисляют инженерный код, набираемый на головном устройстве. Работает полностью офлайн — весь расчёт выполняется на устройстве.
+
+- Репозиторий: [github.com/free4fan/deepal-code-generator](https://github.com/free4fan/deepal-code-generator)
+- Загрузки (APK): [страница релизов](https://github.com/free4fan/deepal-code-generator/releases)
+
 ## Алгоритм
 
 Повторяет Python-скрипт v3.1 (ядро алгоритма идентично v3.0.1; добавлена валидация символов VIN). Обе реализации покрывают общими тестовыми фикстурами `tests/fixtures.txt`:
